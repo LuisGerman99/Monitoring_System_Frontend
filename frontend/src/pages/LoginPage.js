@@ -1,5 +1,6 @@
 import { Typography, Grid, createTheme, ThemeProvider } from '@mui/material'
-import LoginForm from '../Components/LoginForm'
+import LoginForm from '../components/LoginForm'
+import React from 'react'
 
 const theme = createTheme({
     components: {
