@@ -12,10 +12,14 @@
   background-color: #AAB7B8;
 }
 
-.white_back{
-  background-color: red;
+.top_section{
+  margin-top: 4rem;
 }
 
-.top_section{
-  margin-top: 2rem;
+.paper_section{
+  margin-bottom: 1rem;
+}
+
+.plot_margins{
+  margin-top: 1rem;
 }

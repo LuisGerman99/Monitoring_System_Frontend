@@ -1,6 +1,8 @@
-import { Typography, Grid, createTheme, ThemeProvider } from '@mui/material'
+import { Typography, Grid, createTheme, ThemeProvider, Button } from '@mui/material'
 import LoginForm from '../components/LoginForm'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import "../App.css";
 
 const theme = createTheme({
     components: {
@@ -22,6 +24,7 @@ const theme = createTheme({
 });
 
 const Login = () => {
+    let navigate = useNavigate();
     return (
         <Grid
             container
@@ -44,6 +47,17 @@ const Login = () => {
 
             <Grid item xs={6} md={3}>
                 <LoginForm />
+            </Grid>
+
+            <Grid item xs={6} md={3}>
+                <Typography
+                    marginBottom={5}
+                />
+                <Button variant="outlined" onClick={() => {
+                    navigate("/graphpage");
+                }}>
+                    Dev Login
+                </Button>
             </Grid>
 
         </Grid>

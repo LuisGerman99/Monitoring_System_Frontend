@@ -1,4 +1,4 @@
-import { Grid, Container, Paper, Box } from '@mui/material'
+import { Grid, Container, Paper } from '@mui/material'
 import LineChart from '../components/linechart'
 import "../App.css";
 
@@ -11,23 +11,13 @@ const Graphpage = () => {
                 flexDirection="column"
                 rowSpacing={4}
             >
-                    <Grid item xs={12}>
-                        <Container className='top_section' maxWidth={false}>
-                            <Paper>
-                                SECCION DE CONTENIDO
-                            </Paper>
-                        </Container>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Container maxWidth={false}>
-                            <Paper>
-                                SECCION DE CONTENIDO
-                                <Container>
-                                    <LineChart />
-                                </Container>
-                            </Paper>
-                        </Container>
-                    </Grid>
+                <Grid item xs={12}>
+                    <Container className="top_section" maxWidth={false}>
+                        <Paper className="paper_section">
+                            <LineChart />
+                        </Paper>
+                    </Container>
+                </Grid>
             </Grid>
         </div>
     );
